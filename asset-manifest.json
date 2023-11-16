@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/loungewear-product-page/static/css/main.31d6cfe0.css",
+    "main.js": "/loungewear-product-page/static/js/main.8bd3c641.js",
+    "index.html": "/loungewear-product-page/index.html",
+    "main.8bd3c641.js.map": "/loungewear-product-page/static/js/main.8bd3c641.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.8bd3c641.js"
+  ]
+}
