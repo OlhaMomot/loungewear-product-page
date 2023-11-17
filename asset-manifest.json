@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/loungewear-product-page/static/css/main.31d6cfe0.css",
-    "main.js": "/loungewear-product-page/static/js/main.8bd3c641.js",
+    "main.css": "/loungewear-product-page/static/css/main.b23cee04.css",
+    "main.js": "/loungewear-product-page/static/js/main.e625c7d9.js",
+    "static/media/product-picture-2.png": "/loungewear-product-page/static/media/product-picture-2.17c390078eecf93fb352.png",
+    "static/media/product-picture-3.png": "/loungewear-product-page/static/media/product-picture-3.adbf0299b057c8e5fa87.png",
+    "static/media/product-picture-1.png": "/loungewear-product-page/static/media/product-picture-1.7eab302e32c9bd67c2d5.png",
     "index.html": "/loungewear-product-page/index.html",
-    "main.8bd3c641.js.map": "/loungewear-product-page/static/js/main.8bd3c641.js.map"
+    "main.b23cee04.css.map": "/loungewear-product-page/static/css/main.b23cee04.css.map",
+    "main.e625c7d9.js.map": "/loungewear-product-page/static/js/main.e625c7d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.8bd3c641.js"
+    "static/css/main.b23cee04.css",
+    "static/js/main.e625c7d9.js"
   ]
 }
