@@ -16,5 +16,6 @@
 
   @include hover(color, $deep-blue);
   @include hover(background-color, #fff);
+  @include hover(border, 3px solid $deep-blue);
 }
 

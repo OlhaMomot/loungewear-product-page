@@ -1,46 +1,43 @@
 import Button from '../Button/Button';
 import './HeroSection.scss';
+import logo from '../../images/logo.png';
+import product1 from '../../images/product-picture-1.png';
+import product2 from '../../images/product-picture-2.png';
+import product3 from '../../images/product-picture-3.png';
 
 export const HeroSection = () => {
   return (
     <div className='hero'>
 
-      <img src='/logo.png' alt='byteex-logo'/>
+      <img src={logo} alt='byteex-logo' className='hero__logo' />
 
       <p className='hero__title'>Don't apologize for being comfortable</p>
 
       <div className='hero__gallery gallery'>
 
-        <span className='gallery__photo'></span>
-        <span className='gallery__photo--central'></span>
-        <span className='gallery__photo'></span>
+        <img src={product1} alt='girl-in-pajamas' className='gallery__photo--right' />
+        <img src={product2} alt='girl-in-pajamas' className='gallery__photo--central' />
+        <img src={product3} alt='girl-in-pajamas' className='gallery__photo--left' />
+
       </div>
 
-      <div className='hero__about'>
-        <div className='hero__about--mobile'>
-          <span className='about__day-nigth'></span>
+      <div className='hero__about about'>
+        <div className="about__section">
+          <span className='about__icon'></span>
           <p>Beautiful, comfortable loungewear for day or night.</p>
+        </div>
 
-          <span className='about__day-packaging'></span>
+        <div className="about__section">
+          <span className='about__icon'></span>
           <p>No wasteful extras, like tags or plastic packaging.</p>
+        </div>
 
-          <span className='about__fabric'></span>
+        <div className="about__section">
+          <span className='about__icon'></span>
           <p>Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.</p>
         </div>
-
-        <div className='hero__about--desktop'>
-          <span className='about__day-nigth'></span>
-          <p></p>
-
-          <span className='about__day-packaging'></span>
-          <p></p>
-
-          <span className='about__fabric'></span>
-          <p></p>
-        </div>
-
-        <Button />
       </div>
+      <Button />
     </div>
   )
 };

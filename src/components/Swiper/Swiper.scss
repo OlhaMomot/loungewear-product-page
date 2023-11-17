@@ -1,0 +1,63 @@
+@import '../../utils/variables.scss';
+
+.slider-container {
+  position: relative;
+}
+
+.swiper {
+
+  .swiper-slide {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+      height: 453px;
+      width: auto;
+    }
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    left: 0;
+    color: $font-color;
+  }
+
+  .swiper-button-next {
+    position: absolute;
+    right: 0;
+    color: $font-color;
+  }
+  
+}
+
+.swiper-thumbs {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: auto;
+
+  .swiper-slide {
+    cursor: pointer;
+    border: 1px solid red;
+
+    &-thumb-active {
+      border-color: yellow;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 40px;
+    width: 60px;
+    padding-top: 30%;
+    overflow: hidden;
+  }
+
+  &__image {
+    position: absolute;
+  }
+
+}

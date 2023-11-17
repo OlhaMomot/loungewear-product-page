@@ -1,1 +1,122 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  @include onDeskTop {
+    position: relative;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 33px 62px 62px 96px;
+  }
+
+  &__logo {
+    width: 200px;
+    margin: 14px 0;
+
+    @include onDeskTop {
+      margin: 33px 0 61px;
+    }
+  
+  }
+
+  &__title {
+    font-size: 26px;
+    color: $deep-blue;
+    text-align: center;
+
+    @include onDeskTop {
+      font-size: 38px;
+      width: 590px;
+      text-align: start;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__about {
+    margin: 24px 0;
+
+    @include onDeskTop {
+      width: 430px;
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+
+  @include onDeskTop {
+    position: absolute;
+    right: 0;
+    top: 65%;
+    transform: translateY(-50%);
+  }
+
+  &__photo {
+    &--right {
+      height: 166px;
+      margin-right: -8%;
+
+      @include onDeskTop {
+        height: 316px;
+      }
+    }
+
+    &--left {
+      position: relative;
+      margin-left: -8%;
+      height: 166px;
+
+      @include onDeskTop {
+        height: 316px;
+      }
+    }
+
+    &--central {
+      z-index: 100;
+      height: 221px;
+
+      @include onDeskTop {
+        height: 422px;
+      }
+    }
+  }
+
+  &--onDeskTop {
+    display: none;
+
+    @include onDeskTop {
+      display: inherit;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  &__icon {
+    min-height: 31px;
+    min-width: 31px;
+    max-height: 31px;
+    max-width: 31px;
+    background-color: $peach;
+    border: 1px solid $peach;
+    border-radius: 50%;
+  }
+}
