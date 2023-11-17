@@ -11,7 +11,7 @@ export const HeroSection = () => {
 
       <img src={logo} alt='byteex-logo' className='hero__logo' />
 
-      <p className='hero__title'>Don't apologize for being comfortable</p>
+      <p className='hero__title title'>Don't apologize for being comfortable</p>
 
       <div className='hero__gallery gallery'>
 
@@ -22,21 +22,29 @@ export const HeroSection = () => {
       </div>
 
       <div className='hero__about about'>
+
         <div className="about__section">
+
           <span className='about__icon'></span>
+
           <p>Beautiful, comfortable loungewear for day or night.</p>
         </div>
 
         <div className="about__section">
+
           <span className='about__icon'></span>
+
           <p>No wasteful extras, like tags or plastic packaging.</p>
         </div>
 
         <div className="about__section">
+
           <span className='about__icon'></span>
+
           <p>Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.</p>
         </div>
       </div>
+  
       <Button />
     </div>
   )

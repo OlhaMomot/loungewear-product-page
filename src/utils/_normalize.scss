@@ -1,8 +1,29 @@
 @import './variables.scss';
+@import './mixins.scss';
 
 * {
   box-sizing: border-box;
   font-family: 'Sofia Pro', sans-serif;
   font-weight: 400;
   color: $font-color;
+}
+
+.title {
+  font-size: 26px;
+  color: $deep-blue;
+  text-align: center;
+
+  @include onDeskTop {
+    font-size: 38px;
+  }
+}
+
+.icon {
+  min-height: 31px;
+  min-width: 31px;
+  max-height: 31px;
+  max-width: 31px;
+  background-color: $peach;
+  border: 1px solid $peach;
+  border-radius: 50%;
 }

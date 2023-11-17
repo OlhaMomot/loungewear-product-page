@@ -5,7 +5,7 @@ const Button = () => {
   
   return (
     <button className='customize-button'>
-      Customize Your Outfit
+      Customize Your Outfit  →
     </button>
   )
 };
