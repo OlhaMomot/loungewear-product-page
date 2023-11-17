@@ -1,0 +1,21 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+.customize-button {
+  padding: 0;
+  height: 56px;
+  width: 369px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background: $deep-blue;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+
+  @include hover(color, $deep-blue);
+  @include hover(background-color, #fff);
+  @include hover(border, 3px solid $deep-blue);
+}
+

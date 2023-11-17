@@ -1,0 +1,33 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+.header {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $peach;
+  font-family: 'SuisseIntl-Regular';
+  font-size: 11px;
+  color: $font-color;
+  letter-spacing: 8%;
+
+  &__description {
+    display: none;
+
+    @include onDeskTop {
+      display: inherit;
+    }
+  }
+
+  &__line {
+    margin: 0 10px;
+    color: $font-color;
+    opacity: 0.5;
+    display: none;
+
+    @include onDeskTop {
+      display: inherit;
+    }
+  }
+}

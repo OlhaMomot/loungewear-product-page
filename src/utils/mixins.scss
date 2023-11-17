@@ -1,0 +1,13 @@
+@mixin onDeskTop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin hover($property, $toValue) {
+  transition: #{$property} 0.3s;
+
+  &:hover {
+    #{$property}: $toValue;
+  }
+}

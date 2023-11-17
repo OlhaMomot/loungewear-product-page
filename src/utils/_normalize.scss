@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 400;
+  color: $font-color;
+}

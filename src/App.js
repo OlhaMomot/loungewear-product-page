@@ -1,11 +1,14 @@
-import './App.css';
+import './App.scss';
+import { Benefits } from './components/Benefits/Benefits';
+import { Header } from './components/Header/Header';
+import { HeroSection } from './components/HeroSection/HeroSection';
 
 function App() {
   return (
     <div className="App">
-      <h1>
-        Jopa
-      </h1>
+      <Header />
+      <HeroSection />
+      <Benefits />
     </div>
   );
 }
