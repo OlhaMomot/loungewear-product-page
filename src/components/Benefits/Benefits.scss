@@ -1,0 +1,147 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    min-height: 42px;
+    min-width: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    background-color: $peach;
+    border: 1px solid $peach;
+    border-radius: 50%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 244px;
+    text-align: center;
+    padding-bottom: 36px;
+
+    h3 {
+      color: $deep-blue;
+      margin: 20px 16px;
+    }
+  }
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: linear-gradient($peach 18%, #fff);
+  padding: 10px;
+  margin-bottom: 110px;
+
+  &__line {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 20px;
+
+    @include onDeskTop {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    display: none;
+    height: 54px;
+    justify-content: space-around;
+    max-height: 54px;
+
+    @include onDeskTop {
+      display: flex;
+    }
+
+    &--item1 {
+      width: 128px;
+      height: 54px;
+      background-image: url(../../images/brands/brand1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--item2 {
+      width: 112px;
+      height: 54px;
+      background-image: url(../../images/brands/brand2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--item3 {
+      width: 270px;
+      height: 54px;
+      background-image: url(../../images/brands/brand3.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--item4 {
+      width: 194px;
+      height: 54px;
+      background-image: url(../../images/brands/brand4.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--item5 {
+      width: 192px;
+      height: 54px;
+      background-image: url(../../images/brands/brand5.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  &__container {
+    @include onDeskTop {
+      display: none;
+    }
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-custom-pagination {
+  text-align: center;
+}
