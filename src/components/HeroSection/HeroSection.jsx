@@ -1,4 +1,4 @@
-import Button from '../Button/Button';
+import Button from '../UI/Button/Button';
 import './HeroSection.scss';
 import logo from '../../images/logo.png';
 import product1 from '../../images/product-picture-1.png';

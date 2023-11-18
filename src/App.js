@@ -4,6 +4,7 @@ import { Founder } from './components/Founder/Founder';
 import { Header } from './components/Header/Header';
 import { HeroSection } from './components/HeroSection/HeroSection';
 import { HowToOrder } from './components/HowToOrder/HowToOrder';
+import { Reviews } from './components/Reviews/Reviews';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Benefits />
       <Founder />
       <HowToOrder />
+      <Reviews />
     </div>
   );
 }

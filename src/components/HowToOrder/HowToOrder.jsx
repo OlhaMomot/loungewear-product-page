@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import Button from '../Button/Button';
-import stars from '../../images/stars.png';
+import Button from '../UI/Button/Button';
+import { Stars } from '../UI/Stars/Stars';
 
 export const HowToOrder = () => {
   return (
@@ -48,10 +48,7 @@ export const HowToOrder = () => {
 
       <Button />
 
-      <div className="benefits__review review">
-        <img src={stars} alt="stars" className="rewiew__stars"/>
-        <span className="review__text">Over 500+ 5 Star Reviews Online</span>
-      </div>
+      <Stars />
     </div>
   );
 };

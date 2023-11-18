@@ -1,0 +1,20 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+.reviews {
+  &__comment {
+    width: 300px;
+    border: 1px solid $gray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+
+  &__stars {
+    height: 9px;
+  }
+}
