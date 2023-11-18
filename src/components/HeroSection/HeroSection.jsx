@@ -7,7 +7,7 @@ import product3 from '../../images/product-picture-3.png';
 
 export const HeroSection = () => {
   return (
-    <div className='hero'>
+    <section className='hero'>
 
       <img src={logo} alt='byteex-logo' className='hero__logo' />
 
@@ -46,6 +46,6 @@ export const HeroSection = () => {
       </div>
   
       <Button />
-    </div>
+    </section>
   )
 };

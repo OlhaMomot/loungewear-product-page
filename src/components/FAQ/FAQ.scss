@@ -1,0 +1,39 @@
+@import '../../utils/variables.scss';
+
+.faq {
+  padding: 0 40px;
+
+  &__title {
+    margin: 68px 0 50px;
+  }
+
+  &__question {
+    font-size: 18px;
+    padding: 18px 0 10px;
+    // max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+
+    &--answer {
+      font-size: 14px;
+    }
+  }
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    color: $deep-blue;
+    padding: 20px 0;
+  }
+
+  &__button {
+    padding-right: 15px;
+    font-size: 34px;
+    font-weight: 400;
+    color: $deep-blue;
+  }
+}
