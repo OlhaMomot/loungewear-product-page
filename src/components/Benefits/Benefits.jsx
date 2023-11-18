@@ -7,6 +7,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import './Benefits.scss';
 import { ProductImages } from "../../images";
+import stars from '../../images/stars.png';
+import Button from '../Button/Button';
 
 export const Benefits = () => {
   return (
@@ -108,6 +110,13 @@ export const Benefits = () => {
       </div>
 
       <Slider slides={ProductImages} />
+      
+      <Button />
+
+      <div className="benefits__review review">
+        <img src={stars} alt="stars" className="rewiew__stars"/>
+        <span className="review__text">Over 500+ 5 Star Reviews Online</span>
+      </div>
     </div >
   )
 };

@@ -84,14 +84,6 @@
       }
     }
   }
-
-  &--onDeskTop {
-    display: none;
-
-    @include onDeskTop {
-      display: inherit;
-    }
-  }
 }
 
 .about {

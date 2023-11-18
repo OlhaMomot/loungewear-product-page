@@ -4,6 +4,8 @@
 .benefits {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__item {
     display: flex;
@@ -142,4 +144,12 @@
 
 .swiper-custom-pagination {
   text-align: center;
+}
+
+.review {
+  margin: 11px 14px 43px;
+  &__text {
+    font-size: 12px;
+    margin-left: 14px;
+  }
 }

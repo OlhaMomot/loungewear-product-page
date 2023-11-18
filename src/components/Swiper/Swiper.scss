@@ -2,10 +2,14 @@
 
 .slider-container {
   position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper {
-
   .swiper-slide {
     overflow: hidden;
     display: flex;
@@ -23,6 +27,10 @@
     position: absolute;
     left: 0;
     color: $font-color;
+
+    &:after {
+      height: 20px;
+    }
   }
 
   .swiper-button-next {
@@ -34,29 +42,25 @@
 }
 
 .swiper-thumbs {
-  position: absolute;
-  bottom: 0;
-  height: 20px;
-  width: auto;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
 
   .swiper-slide {
+    width: 40px;
     cursor: pointer;
-    border: 1px solid red;
+    border: 1px solid $font-color;
 
     &-thumb-active {
-      border-color: yellow;
+      border: 2px solid $deep-blue;
     }
   }
 
   &__wrapper {
-    position: relative;
     height: 40px;
-    width: 60px;
-    padding-top: 30%;
-    overflow: hidden;
   }
 
   &__image {
-    position: absolute;
+    object-fit: fill;
   }
 }
