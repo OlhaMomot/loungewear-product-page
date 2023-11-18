@@ -10,10 +10,9 @@ export const Founder = () => {
       <h3 className="founder__title title">Be your best self.</h3>
 
       <div className='founder__photos photos'>
-
-        <img src={product1} alt='girl-in-pajamas' className='photos--right' />
-        <img src={product2} alt='girl-in-pajamas' className='photos--central' />
-        <img src={product3} alt='girl-in-pajamas' className='photos--left' />
+        <div className='right'><img src={product1} alt='girl-in-pajamas' className='p' /></div>
+        <div className='central'><img src={product2} alt='girl-in-pajamas' className='p' /></div>
+        <div className='left'><img src={product3} alt='girl-in-pajamas' className='p' /></div>
       </div>
 
       <article className='founder__text'>

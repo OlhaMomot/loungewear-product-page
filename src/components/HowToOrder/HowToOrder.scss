@@ -1,0 +1,50 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+
+  &__title {
+    margin: 32px 0 30px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 288px;
+    height: 288px;
+    padding: 32px;
+    background-color: $gray;
+    border: 1px solid $gray;
+    border-radius: 8px;
+
+    &--title {
+      padding: 20px;
+      color: $deep-blue;
+      font-size: 22px;
+    }
+
+    &--text {
+      font-size: 15px;
+    }
+  }
+
+}
+
+.review {
+  margin: 11px 14px 43px;
+  &__text {
+    font-size: 12px;
+    margin-left: 14px;
+  }
+}
+
+.mySwiper {
+  margin-bottom: 40px;
+}

@@ -22,7 +22,7 @@
     @include onDeskTop {
       margin: 33px 0 61px;
     }
-  
+
   }
 
   &__title {
@@ -44,7 +44,7 @@
 
 .gallery {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   position: relative;
 
