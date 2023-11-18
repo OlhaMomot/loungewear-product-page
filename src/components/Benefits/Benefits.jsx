@@ -48,7 +48,6 @@ export const Benefits = () => {
 
           <div className="swiper-custom-pagination" />
         </div>
-
       </div>
 
       <h2 className="title">Loungewear you can be proud of.</h2>

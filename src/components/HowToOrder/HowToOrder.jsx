@@ -44,10 +44,9 @@ export const HowToOrder = () => {
             <p>Wear hernest around the house, out on the town, or in bed.</p>
           </div>
         </SwiperSlide>
+
       </Swiper>
-
       <Button />
-
       <Stars />
     </div>
   );

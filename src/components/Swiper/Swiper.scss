@@ -16,11 +16,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    img {
-      height: 453px;
-      width: auto;
-    }
+  }
+
+  &__image {
+    height: 453px;
+    width: auto;
   }
 
   .swiper-button-prev {

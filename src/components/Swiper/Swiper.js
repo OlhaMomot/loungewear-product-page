@@ -20,7 +20,7 @@ export const Slider = ({ slides }) => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
 
-            <img src={slide} alt='product-name' />
+            <img src={slide} alt='product-name' className='swiper__image' />
           </SwiperSlide>
         ))}
       </Swiper>

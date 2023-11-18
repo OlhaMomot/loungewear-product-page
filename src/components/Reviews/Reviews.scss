@@ -2,19 +2,78 @@
 @import '../../utils/mixins.scss';
 
 .reviews {
+  padding: 0 22px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__about {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 38px;
+  }
+
+  &__photo {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+
+    &--item {
+      height: 100%;
+    }
+  }
+
   &__comment {
     width: 300px;
     border: 1px solid $gray;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 1px black;
+    box-shadow: 2px 2px 4px 1px #00000014;
   }
 }
 
 .comment {
   display: flex;
   flex-direction: column;
+  padding: 30px;
+
+  &__author {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__ name {
+    font-size: 15px;
+  }
+
+  &__picture {
+    display: block;
+    height: 35px;
+    width: 35px;
+    margin-right: 12px;
+    background-color: $deep-blue;
+    border: 1px solid $deep-blue;
+    border-radius: 50%;
+  }
 
   &__stars {
-    height: 9px;
+    height: 100%;
+    width: 100%;
+
+    &--container {
+      height: 9px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
   }
 }
