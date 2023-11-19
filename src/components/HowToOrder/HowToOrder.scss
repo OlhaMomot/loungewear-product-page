@@ -33,6 +33,19 @@
     &--text {
       font-size: 15px;
     }
+
+    &--lorry {
+      background-color: $peach;
+    }
+
+    &__icon {
+      min-height: 50px;
+      min-width: 50px;
+      max-height: 50px;
+      max-width: 50px;
+      text-align: center;
+      line-height: 42px;
+    }
   }
 }
 

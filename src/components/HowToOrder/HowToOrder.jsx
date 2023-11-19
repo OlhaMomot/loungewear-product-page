@@ -15,7 +15,7 @@ export const HowToOrder = () => {
         <SwiperSlide>
           <div className='order__box'>
 
-            <span className='order__icon'></span>
+            <span className='order__icon icon-cart'></span>
 
             <h4 className='order__box--title'>You save.</h4>
 
@@ -24,9 +24,9 @@ export const HowToOrder = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className='order__box'>
+          <div className='order__box order__box--lorry'>
 
-            <span className='order__icon'></span>
+            <span className='order__icon icon-lorry'></span>
 
             <h4 className='order__box--title'>We ship.</h4>
 
@@ -37,7 +37,7 @@ export const HowToOrder = () => {
         <SwiperSlide>
           <div className='order__box'>
 
-            <span className='order__icon'></span>
+            <span className='order__icon icon-day-night'></span>
 
             <h4 className='order__box--title'>You enjoy!</h4>
 

@@ -2,6 +2,9 @@ import { useState } from 'react';
 import './FAQ.scss';
 import Button from '../UI/Button/Button';
 import { Stars } from '../UI/Stars/Stars';
+import product1 from '../../images/product-picture-6.png';
+import product2 from '../../images/product-picture-5.png';
+import product3 from '../../images/product-picture-1.png';
 
 export const FAQ = () => {
   const [clicked, setClicked] = useState({
@@ -26,7 +29,7 @@ export const FAQ = () => {
 
           <div
             onClick={() => setClicked(prev => ({ ...prev, 1: !prev[1] }))}
-            className={`question__button ${clicked[1] ? 'open' : ''}`}
+            className="question__button"
           >
             {clicked[1] ? '-' : '+'}
           </div>
@@ -100,7 +103,7 @@ export const FAQ = () => {
           <p className='question__title'>lorem ipsum dolor sit amet</p>
 
           <div
-            onClick={() => setClicked(prev => ({ ...prev, 4: !clicked }))}
+            onClick={() => setClicked(prev => ({ ...prev, 4: !clicked[4] }))}
             className='question__button'
           >
             {clicked[4] ? '-' : '+'}
@@ -125,7 +128,7 @@ export const FAQ = () => {
           <p className='question__title'>lorem ipsum dolor sit amet</p>
 
           <div
-            onClick={() => setClicked(prev => ({ ...prev, 5: !clicked }))}
+            onClick={() => setClicked(prev => ({ ...prev, 5: !clicked[5] }))}
             className='question__button'
           >
             {clicked[5] ? '-' : '+'}
@@ -150,7 +153,7 @@ export const FAQ = () => {
           <p className='question__title'>lorem ipsum dolor sit amet</p>
 
           <div
-            onClick={() => setClicked(prev => ({ ...prev, 6: !clicked }))}
+            onClick={() => setClicked(prev => ({ ...prev, 6: !clicked[6] }))}
             className='question__button'
           >
             {clicked[6] ? '-' : '+'}
@@ -167,6 +170,22 @@ export const FAQ = () => {
       </div>
 
       <hr />
+
+      <div className="faq__photos photos">
+
+        <div className='photos--right'>
+          <img src={product1} alt='girl-in-pajamas' className='photos--photo' />
+        </div>
+
+        <div className='photos--central'>
+          <img src={product2} alt='girl-in-pajamas' className='photos--photo' />
+        </div>
+
+        <div className='photos--left'>
+          <img src={product3} alt='girl-in-pajamas' className='photos--photo' />
+        </div>
+
+      </div>
 
       <Button />
       <Stars />

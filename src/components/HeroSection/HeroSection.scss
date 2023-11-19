@@ -34,7 +34,7 @@
   }
 
   &__about {
-    margin: 24px 0;    
+    margin: 24px 0;
 
     @include onDeskTop {
       width: 430px;
@@ -55,6 +55,9 @@
   }
 
   &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 42px;
     min-width: 42px;
     max-height: 42px;
