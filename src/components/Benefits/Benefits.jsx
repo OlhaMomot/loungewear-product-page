@@ -54,7 +54,9 @@ export const Benefits = () => {
 
       <div className="benefits__item">
 
-        <span className="benefits__icon"></span>
+        <div className="benefits__icon">
+          <span className="icon-cloud"/>
+        </div>
 
         <div className="benefits__text">
           <h3>Ethically sourced.</h3>
@@ -68,7 +70,9 @@ export const Benefits = () => {
 
       <div className="benefits__item">
 
-        <span className="benefits__icon"></span>
+        <div className="benefits__icon">
+          <span className="icon-day-night"/>
+        </div>
 
         <div className="benefits__text">
           <h3>Responsibly made.</h3>
@@ -82,7 +86,9 @@ export const Benefits = () => {
 
       <div className="benefits__item">
 
-        <span className="benefits__icon"></span>
+        <div className="benefits__icon">
+          <span className="icon-leaf"/>
+        </div>
 
         <div className="benefits__text">
           <h3>Made for living in.</h3>
@@ -96,7 +102,9 @@ export const Benefits = () => {
 
       <div className="benefits__item">
 
-        <span className="benefits__icon"></span>
+        <div className="benefits__icon">
+          <span className="icon-wave"/>
+        </div>
 
         <div className="benefits__text">
           <h3>Unimaginably comfortable.</h3>

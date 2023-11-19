@@ -34,54 +34,10 @@
   }
 
   &__about {
-    margin: 24px 0;
+    margin: 24px 0;    
 
     @include onDeskTop {
       width: 430px;
-    }
-  }
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  @include onDeskTop {
-    position: absolute;
-    right: 0;
-    top: 65%;
-    transform: translateY(-50%);
-  }
-
-  &__photo {
-    &--right {
-      height: 166px;
-      margin-right: -8%;
-
-      @include onDeskTop {
-        height: 316px;
-      }
-    }
-
-    &--left {
-      position: relative;
-      margin-left: -8%;
-      height: 166px;
-
-      @include onDeskTop {
-        height: 316px;
-      }
-    }
-
-    &--central {
-      z-index: 100;
-      height: 221px;
-
-      @include onDeskTop {
-        height: 422px;
-      }
     }
   }
 }
@@ -93,7 +49,20 @@
 
   &__section {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 14px;
+  }
+
+  &__icon {
+    min-height: 42px;
+    min-width: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    background-color: $peach;
+    border: 1px solid $peach;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
   }
 }

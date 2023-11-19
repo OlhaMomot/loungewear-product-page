@@ -1,0 +1,78 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+.info {
+  background-color: $gray;
+  padding: 52px 0;
+
+  hr {
+    width: 282px;
+    color: $border-gray;
+
+    @include onDeskTop {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onDeskTop {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 14px;
+    background-color: $light-gray;
+    border: 1px solid $light-gray;
+    border-radius: 50%;
+  }
+
+  &__number {
+    font-size: 22px;
+    font-weight: 600;
+    color: $deep-blue;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $deep-blue;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+
+    @include onDeskTop {
+      padding: 0 42px;
+      border-right: 1px solid $border-gray;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.deskTop {
+  display: none;
+
+  @include onDeskTop {
+    display: inherit;
+  }
+}
