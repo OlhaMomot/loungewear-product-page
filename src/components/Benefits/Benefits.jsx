@@ -50,8 +50,11 @@ export const Benefits = () => {
         </div>
       </div>
 
+      <h2 className="benefits__title title">Loungewear you can be proud of.</h2>
+
+      <Slider slides={ProductImages} />
+
       <div className="benefits__container">
-        <h2 className="benefits__title title">Loungewear you can be proud of.</h2>
 
         <div className="benefits__item item">
 
@@ -118,8 +121,6 @@ export const Benefits = () => {
         </div>
 
       </div>
-
-      <Slider slides={ProductImages} />
 
       <div className="benefits__button">
 
