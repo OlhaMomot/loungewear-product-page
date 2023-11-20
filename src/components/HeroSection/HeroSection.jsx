@@ -5,6 +5,7 @@ import logo from '../../images/logo.png';
 import product1 from '../../images/product-picture-1.png';
 import product2 from '../../images/product-picture-2.png';
 import product3 from '../../images/product-picture-3.png';
+import stars from '../../images/stars.png';
 
 export const HeroSection = () => {
   return (
@@ -61,6 +62,27 @@ export const HeroSection = () => {
         </div>
 
         <Button />
+
+        <div className='hero__comment comment'>
+          <div className='comment__author'>
+
+            <span className='comment__picture'></span>
+
+            <div className='comment__stars--container'>
+
+              <img src={stars} alt='stars' className='comment__stars' />
+
+              <span className='comment__name'>Amy, P.</span>
+            </div>
+          </div>
+
+          <p className='hero__comment--text comment__text'>
+            Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. 
+            Quality product on every level. From the compostable packaging, 
+            to the supplied washing bag, even the garments smells like fresh herbs 
+            when I first held them.
+          </p>
+        </div>
       </div>
 
       <div className='hero__gallery gallery gallery--deskTop'>
@@ -77,6 +99,7 @@ export const HeroSection = () => {
           <img src={product3} alt='girl-in-pajamas' className='picture' />
         </div>
       </div>
+
     </section>
   )
 };

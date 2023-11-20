@@ -47,18 +47,15 @@
       height: 100%;
     }
   }
-
-  &__comment {
-    width: 300px;
-    border: 1px solid $gray;
-    border-radius: 8px;
-    box-shadow: 2px 2px 4px 1px #00000014;
-  }
 }
 
 .comment {
   display: flex;
   flex-direction: column;
+  width: 300px;
+  border: 1px solid $gray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px 1px #00000014;
   padding: 30px;
 
   &__author {

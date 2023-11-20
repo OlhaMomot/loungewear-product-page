@@ -8,7 +8,11 @@
   margin-bottom: 100px;
 
   &__container {
-    width: 50%;
+    width: 100%;
+
+    @include onDeskTop {
+      width: 50%;
+    }
   }
 
   &__title {
@@ -28,12 +32,12 @@
   }
 
   &__photos {
-    display: none;
+    display: none !important;
 
     @include onDeskTop {
       position: relative;
       top: 100px;
-      display: grid;
+      display: grid !important;
     }
   }
 
