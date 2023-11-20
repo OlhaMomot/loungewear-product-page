@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?b8fmpp');
+  src:  url('fonts/icomoon.eot?b8fmpp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b8fmpp') format('truetype'),
+    url('fonts/icomoon.woff?b8fmpp') format('woff'),
+    url('fonts/icomoon.svg?b8fmpp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart-gray:before {
+  content: "\e900";
+  color: #676869;
+}
+.icon-cloud:before {
+  content: "\e901";
+  color: #01005b;
+}
+.icon-CO2:before {
+  content: "\e902";
+  color: #6160d2;
+}
+
+.icon-day-night {
+  display: block;
+  background-image: url(../icons/day-night.svg);
+  width: 28px;
+  height: 28px;
+}
+
+.icon-drop:before {
+  content: "\e904";
+  color: #6160d2;
+}
+.icon-guard:before {
+  content: "\e905";
+  color: #676869;
+}
+.icon-leaf:before {
+  content: "\e906";
+  color: #01005b;
+}
+.icon-lightning:before {
+  content: "\e907";
+  color: #2a2996;
+}
+.icon-lorry {
+  display: block;
+  background-image: url(../icons/lorry.svg);
+  width: 68px;
+  height: 48px;
+}
+.icon-lorry-gray:before {
+  content: "\e909";
+  color: #676869;
+}
+.icon-wave:before {
+  content: "\e90a";
+  color: #01005b;
+}
+.icon-cart:before {
+  content: "\e90b";
+  color: #01005b;
+  font-weight: bold;
+}

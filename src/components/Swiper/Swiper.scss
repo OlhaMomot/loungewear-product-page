@@ -1,7 +1,6 @@
 @import '../../utils/variables.scss';
 
 .slider-container {
-  position: relative;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -18,19 +17,10 @@
     align-items: center;
   }
 
-  &__image {
-    height: 453px;
-    width: auto;
-  }
-
   .swiper-button-prev {
     position: absolute;
     left: 0;
     color: $font-color;
-
-    &:after {
-      height: 20px;
-    }
   }
 
   .swiper-button-next {
@@ -38,13 +28,12 @@
     right: 0;
     color: $font-color;
   }
-  
 }
 
 .swiper-thumbs {
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   .swiper-slide {
     width: 40px;
@@ -61,6 +50,7 @@
   }
 
   &__image {
-    object-fit: fill;
+    object-fit: cover;
+    width: 100%;
   }
 }

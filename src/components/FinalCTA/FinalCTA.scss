@@ -1,0 +1,101 @@
+@import '../../utils/mixins.scss';
+@import '../../utils/variables.scss';
+
+.final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin: 52px 0 30px;
+
+    &--text {
+      font-size: 15px;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__photos {
+    margin-bottom: 50px;
+    display: grid !important;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__bottom {
+    width: 100%;
+    padding: 0 30px 60px;
+    background-image: linear-gradient(to top, $peach 18%, #fff);
+  }
+
+  &__text {
+    width: 130px;
+    margin-bottom: 16px;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__info {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 52px 0;
+
+    @include onDeskTop {
+      display: flex;
+    }
+
+    hr {
+      width: 282px;
+      color: $border-gray;
+
+      @include onDeskTop {
+        display: none;
+      }
+    }
+
+    &__title {
+      margin-bottom: 38px;
+    }
+
+    &__icon {
+      display: block;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 14px;
+      background-color: $light-gray;
+      border: 1px solid $light-gray;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+
+      &--icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &--item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 23px;
+
+      @include onDeskTop {
+        padding: 0 42px;
+        border-right: 1px solid $border-gray;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}

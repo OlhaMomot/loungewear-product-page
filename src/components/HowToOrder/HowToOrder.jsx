@@ -11,11 +11,11 @@ export const HowToOrder = () => {
     <div className='order'>
       <h3 className='order__title title'>Comfort made easy</h3>
 
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper order__swiper">
         <SwiperSlide>
           <div className='order__box'>
 
-            <span className='order__icon'></span>
+            <span className='order__icon icon-cart'></span>
 
             <h4 className='order__box--title'>You save.</h4>
 
@@ -24,9 +24,9 @@ export const HowToOrder = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className='order__box'>
+          <div className='order__box order__box--lorry'>
 
-            <span className='order__icon'></span>
+            <span className='order__icon icon-lorry'></span>
 
             <h4 className='order__box--title'>We ship.</h4>
 
@@ -37,7 +37,7 @@ export const HowToOrder = () => {
         <SwiperSlide>
           <div className='order__box'>
 
-            <span className='order__icon'></span>
+            <span className='order__icon icon-day-night'></span>
 
             <h4 className='order__box--title'>You enjoy!</h4>
 
@@ -46,6 +46,33 @@ export const HowToOrder = () => {
         </SwiperSlide>
 
       </Swiper>
+
+      <div className="order__blocks">
+        <div className='order__box'>
+
+          <div className='order__icon'>
+            <span className='order__icon icon-cart'></span>
+          </div>
+
+          <h4 className='order__box--title'>You save.</h4>
+          <p className='order__box--text'>Browse our store and find something you love.</p>
+        </div>
+
+        <div className='order__box order__box--lorry'>
+
+          <span className='order__icon icon-lorry'></span>
+          <h4 className='order__box--title'>We ship.</h4>
+          <p>We ship your items within 1-2 days of receiving your order.</p>
+        </div>
+
+        <div className='order__box'>
+
+          <span className='order__icon icon-day-night'></span>
+          <h4 className='order__box--title'>You enjoy!</h4>
+          <p>Wear hernest around the house, out on the town, or in bed.</p>
+        </div>
+      </div>
+
       <Button />
       <Stars />
     </div>
