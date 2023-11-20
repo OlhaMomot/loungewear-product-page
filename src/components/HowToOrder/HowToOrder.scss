@@ -12,6 +12,14 @@
     margin: 32px 0 30px;
   }
 
+&__swiper {
+  margin-bottom: 40px;
+
+  @include onDeskTop {
+    display: none;
+  }
+}
+
   &__box {
     display: flex;
     flex-direction: column;
@@ -45,10 +53,20 @@
       max-width: 50px;
       text-align: center;
       line-height: 42px;
+
+      @include onDeskTop {
+        height: 60px;
+      }
     }
   }
-}
 
-.mySwiper {
-  margin-bottom: 40px;
+  &__blocks {
+    display: none;
+
+    @include onDeskTop {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 56px;
+    }
+  }
 }

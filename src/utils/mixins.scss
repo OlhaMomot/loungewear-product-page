@@ -1,5 +1,5 @@
 @mixin onDeskTop {
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }
@@ -13,13 +13,16 @@
 }
 
 .gallery {
-  position: relative;
   width: 345px;
   height: 212px;
   display: grid;
   grid-template-columns: repeat(17, 1fr);
   grid-template-rows: repeat(7, 1fr);
   margin-bottom: 46px;
+
+  @include onDeskTop {
+    display: none;
+  }
 
   &--central {
     grid-column: 5/-5;
@@ -41,12 +44,24 @@
     overflow: hidden;
 
   }
-}
 
-.pic {
-  position: relative;
-  width: 100%;
-  height: aut0;
-  object-fit: contain;
-  overflow: hidden;
+  &--deskTop {
+    display: none;
+    margin-bottom: 60px;
+
+    @include onDeskTop {
+      width: 650px;
+      height: 422px;
+      display: grid;
+    }
+  }
+
+  .picture {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+  }
 }

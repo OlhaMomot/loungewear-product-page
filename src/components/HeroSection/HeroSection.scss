@@ -8,10 +8,13 @@
   align-items: center;
   padding: 0 20px;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
   @include onDeskTop {
-    position: relative;
-    align-items: start;
-    flex-wrap: wrap;
+    flex-direction: row;
     padding: 33px 62px 62px 96px;
   }
 
@@ -49,7 +52,6 @@
 
   &__section {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 14px;
   }

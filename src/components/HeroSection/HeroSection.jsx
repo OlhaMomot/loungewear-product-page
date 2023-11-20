@@ -10,56 +10,73 @@ export const HeroSection = () => {
   return (
     <section className='hero'>
 
-      <img src={logo} alt='byteex-logo' className='hero__logo' />
+      <div className="hero__container">
+        <img src={logo} alt='byteex-logo' className='hero__logo' />
 
-      <p className='hero__title title'>Don't apologize for being comfortable</p>
+        <h1 className='hero__title title content-column'>Don't apologize for being comfortable</h1>
 
-      <div className='hero__gallery gallery'>
+        <div className='hero__gallery gallery'>
+
+          <div className='gallery--right'>
+            <img src={product1} alt='girl-in-pajamas' className='picture' />
+          </div>
+
+          <div className='gallery--central'>
+            <img src={product2} alt='girl-in-pajamas' className='picture' />
+          </div>
+
+          <div className='gallery--left'>
+            <img src={product3} alt='girl-in-pajamas' className='picture' />
+          </div>
+        </div>
+
+        <div className='hero__about about content-column'>
+
+          <div className="about__section">
+
+            <div className='about__icon'>
+              <span className='icon-day-night'></span>
+            </div>
+
+            <p>Beautiful, comfortable loungewear for day or night.</p>
+          </div>
+
+          <div className="about__section">
+
+            <div className='about__icon'>
+              <span className='icon-cart'></span>
+            </div>
+
+            <p>No wasteful extras, like tags or plastic packaging.</p>
+          </div>
+
+          <div className="about__section">
+
+            <div className='about__icon'>
+              <span className='icon-wave'></span>
+            </div>
+
+            <p>Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.</p>
+          </div>
+        </div>
+
+        <Button />
+      </div>
+
+      <div className='hero__gallery gallery gallery--deskTop'>
 
         <div className='gallery--right'>
-          <img src={product1} alt='girl-in-pajamas' className='pic' />
+          <img src={product1} alt='girl-in-pajamas' className='picture' />
         </div>
 
         <div className='gallery--central'>
-          <img src={product2} alt='girl-in-pajamas' className='pic' />
+          <img src={product2} alt='girl-in-pajamas' className='picture' />
         </div>
 
         <div className='gallery--left'>
-          <img src={product3} alt='girl-in-pajamas' className='pic' />
+          <img src={product3} alt='girl-in-pajamas' className='picture' />
         </div>
       </div>
-
-      <div className='hero__about about'>
-
-        <div className="about__section">
-
-          <div className='about__icon'>
-            <span className='icon-day-night'></span>
-          </div>
-
-          <p>Beautiful, comfortable loungewear for day or night.</p>
-        </div>
-
-        <div className="about__section">
-
-          <div className='about__icon'>
-            <span className='icon-cart'></span>
-          </div>
-
-          <p>No wasteful extras, like tags or plastic packaging.</p>
-        </div>
-
-        <div className="about__section">
-
-          <div className='about__icon'>
-            <span className='icon-wave'></span>
-          </div>
-
-          <p>Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.</p>
-        </div>
-      </div>
-
-      <Button />
     </section>
   )
 };

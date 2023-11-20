@@ -9,7 +9,10 @@ export const Info = () => {
       <div className="info__container">
 
         <div className="info__item">
-          <span className="info__icon"></span>
+
+          <div className='info__item--icon'>
+            <span className="info__icon icon-CO2"></span>
+          </div>
 
           <span className="info__number">3,927 kg</span>
 
@@ -19,7 +22,10 @@ export const Info = () => {
         </div>
 
         <div className="info__item">
-          <span className="info__icon"></span>
+
+          <div className='info__item--icon'>
+            <span className="info__icon icon-drop"></span>
+          </div>
 
           <span className="info__number">2,546,167 days</span>
 
@@ -29,7 +35,10 @@ export const Info = () => {
         </div>
 
         <div className="info__item deskTop">
-          <span className="info__icon"></span>
+
+          <div className='info__item--icon'>
+            <span className="info__icon icon-lightning"></span>
+          </div>
 
           <span className="info__number">7,321 kWh</span>
 

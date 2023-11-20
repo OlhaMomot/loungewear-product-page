@@ -17,5 +17,9 @@
   @include hover(color, $deep-blue);
   @include hover(background-color, #fff);
   @include hover(border, 1px solid $deep-blue);
+
+  @include onDeskTop {
+    width: 380px;
+  }
 }
 

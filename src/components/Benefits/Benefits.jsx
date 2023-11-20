@@ -12,7 +12,7 @@ import { Stars } from "../UI/Stars/Stars";
 
 export const Benefits = () => {
   return (
-    <div className="benefits">
+    <section className="benefits">
 
       <div className="benefits__brands brands">
 
@@ -31,7 +31,7 @@ export const Benefits = () => {
 
           <Swiper
             slidesPerView={3}
-            spaceBetween={30}
+            spaceBetween={10}
             pagination={{
               el: '.swiper-custom-pagination',
               clickable: true,
@@ -50,75 +50,83 @@ export const Benefits = () => {
         </div>
       </div>
 
-      <h2 className="title">Loungewear you can be proud of.</h2>
+      <div className="benefits__container">
+        <h2 className="benefits__title title">Loungewear you can be proud of.</h2>
 
-      <div className="benefits__item">
+        <div className="benefits__item item">
 
-        <div className="benefits__icon">
-          <span className="icon-cloud"/>
+          <div className="item__icon">
+            <span className="icon-cloud" />
+          </div>
+
+          <div className="item__text">
+            <h3>Ethically sourced.</h3>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Odit sequi porro quaerat. Facere dolores hic harum voluptatibus perspiciatis cumque.
+            </p>
+          </div>
         </div>
 
-        <div className="benefits__text">
-          <h3>Ethically sourced.</h3>
+        <div className="benefits__item item">
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Odit sequi porro quaerat. Facere dolores hic harum voluptatibus perspiciatis cumque.
-          </p>
-        </div>
-      </div>
+          <div className="item__icon">
+            <span className="icon-day-night" />
+          </div>
 
-      <div className="benefits__item">
+          <div className="item__text">
+            <h3>Responsibly made.</h3>
 
-        <div className="benefits__icon">
-          <span className="icon-day-night"/>
-        </div>
-
-        <div className="benefits__text">
-          <h3>Responsibly made.</h3>
-
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Odit sequi porro quaerat. Facere dolores hic harum voluptatibus perspiciatis cumque.
-          </p>
-        </div>
-      </div>
-
-      <div className="benefits__item">
-
-        <div className="benefits__icon">
-          <span className="icon-leaf"/>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Odit sequi porro quaerat. Facere dolores hic harum voluptatibus perspiciatis cumque.
+            </p>
+          </div>
         </div>
 
-        <div className="benefits__text">
-          <h3>Made for living in.</h3>
+        <div className="benefits__item item">
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Odit sequi porro quaerat. Facere dolores hic harum voluptatibus perspiciatis cumque.
-          </p>
+          <div className="item__icon">
+            <span className="icon-leaf" />
+          </div>
+
+          <div className="item__text">
+            <h3>Made for living in.</h3>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Odit sequi porro quaerat. Facere dolores hic harum voluptatibus perspiciatis cumque.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="benefits__item">
+        <div className="benefits__item item">
 
-        <div className="benefits__icon">
-          <span className="icon-wave"/>
+          <div className="item__icon">
+            <span className="icon-wave" />
+          </div>
+
+          <div className="item__text">
+            <h3>Unimaginably comfortable.</h3>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Odit sequi porro quaerat. Facere dolores hic harum voluptatibus perspiciatis cumque.
+            </p>
+          </div>
         </div>
 
-        <div className="benefits__text">
-          <h3>Unimaginably comfortable.</h3>
-
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Odit sequi porro quaerat. Facere dolores hic harum voluptatibus perspiciatis cumque.
-          </p>
-        </div>
       </div>
 
       <Slider slides={ProductImages} />
-      <Button />
-      <Stars />
-    </div >
+
+      <div className="benefits__button">
+
+        <Button />
+        <Stars />
+      </div>
+
+    </section>
   )
 };

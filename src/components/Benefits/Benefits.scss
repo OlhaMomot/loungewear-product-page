@@ -7,11 +7,51 @@
   justify-content: center;
   align-items: center;
 
-  &__item {
+  @include onDeskTop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include onDeskTop {
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 45%;
+      margin: 0 60px 54px 100px;
+    }
+  }
+
+  &__button {
+    @include onDeskTop {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    @include onDeskTop {
+      margin-bottom: 85px;
+      width: 100%;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include onDeskTop {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   &__icon {
@@ -38,11 +78,24 @@
     text-align: center;
     padding-bottom: 36px;
 
+    @include onDeskTop {
+      width: 490px;
+      justify-content: start;
+      margin-left: 40px;
+      align-items: start;
+      text-align: start;
+    }
+
     h3 {
       color: $deep-blue;
       margin: 20px 16px;
+
+      @include onDeskTop {
+        margin: 0 0 14px 0;
+      }
     }
   }
+
 }
 
 .brands {
@@ -51,7 +104,11 @@
   width: 100%;
   background-image: linear-gradient($peach 18%, #fff);
   padding: 10px;
-  margin-bottom: 110px;
+  margin-bottom: 40px;
+
+  @include onDeskTop {
+    margin-bottom: 110px;
+  }
 
   &__line {
     font-size: 15px;
@@ -62,6 +119,10 @@
     @include onDeskTop {
       font-size: 20px;
     }
+  }
+
+  &__swiper {
+    margin-bottom: 40px;
   }
 
   &__list {
@@ -128,6 +189,7 @@
   &__container {
     @include onDeskTop {
       display: none;
+      margin-bottom: 40px;
     }
   }
 }

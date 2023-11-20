@@ -30,12 +30,21 @@
   }
 
   &__icon {
+    display: block;
     width: 42px;
     height: 42px;
     margin-bottom: 14px;
     background-color: $light-gray;
     border: 1px solid $light-gray;
     border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+
+    &--icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__number {

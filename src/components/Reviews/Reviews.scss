@@ -2,6 +2,10 @@
 @import '../../utils/mixins.scss';
 
 .reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 22px;
 
   &__title {
@@ -11,6 +15,18 @@
   &__about {
     text-align: center;
     margin-bottom: 50px;
+
+    @include onDeskTop {
+      width: 614px;
+    }
+  }
+
+  &__swiper {
+    margin-bottom: 30px;
+
+    @include onDeskTop {
+      margin-bottom: 60px;
+    }
   }
 
   &__gallery {

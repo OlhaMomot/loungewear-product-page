@@ -18,158 +18,166 @@ export const FAQ = () => {
 
   return (
     <section className='faq'>
-      <h3 className='faq__title title'>frequently asked questions.</h3>
 
-      <hr />
+      <div className='faq__container'>
+        <h3 className='faq__title title'>frequently asked questions.</h3>
 
-      <div className="faq__question">
-        <div className='question'>
+        <hr />
 
-          <p className='question__title'>lorem ipsum dolor sit amet</p>
+        <div className="faq__question">
+          <div className='question'>
 
-          <div
-            onClick={() => setClicked(prev => ({ ...prev, 1: !prev[1] }))}
-            className="question__button"
-          >
-            {clicked[1] ? '-' : '+'}
+            <p className='question__title'>lorem ipsum dolor sit amet</p>
+
+            <div
+              onClick={() => setClicked(prev => ({ ...prev, 1: !prev[1] }))}
+              className="question__button"
+            >
+              {clicked[1] ? '-' : '+'}
+            </div>
           </div>
+
+          {clicked[1] &&
+            (<p className='faq__question--answer'>
+              Our fabrics and garments are made in Portugal.
+              We build strong relationships with our immediate suppliers and visit as often as possible.
+            </p>)
+          }
         </div>
 
-        {clicked[1] &&
-          (<p className='faq__question--answer'>
-            Our fabrics and garments are made in Portugal.
-            We build strong relationships with our immediate suppliers and visit as often as possible.
-          </p>)
-        }
-      </div>
+        <hr />
+        <div className="faq__question">
 
-      <hr />
-      <div className="faq__question">
+          <div className='question'>
 
-        <div className='question'>
+            <p className='question__title'>lorem ipsum dolor sit amet</p>
 
-          <p className='question__title'>lorem ipsum dolor sit amet</p>
-
-          <div
-            onClick={() => {
-              setClicked(prev => ({ ...prev, 2: !clicked[2] }))
-            }}
-            className='question__button'
-          >
-            {clicked[2] ? '-' : '+'}
+            <div
+              onClick={() => {
+                setClicked(prev => ({ ...prev, 2: !clicked[2] }))
+              }}
+              className='question__button'
+            >
+              {clicked[2] ? '-' : '+'}
+            </div>
           </div>
-        </div>
 
-        {clicked[2] &&
-          (<p className='faq__question--answer'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sint eaque?
-            Possimus, cumque a alias facilis cum ipsum? Sit, reiciendis iusto! Officia nesciunt reprehenderit
-            laudantium corporis minima sed cum animi.
-          </p>)
-        }
-
-      </div>
-
-      <hr />
-      <div className="faq__question">
-
-        <div className='question'>
-
-          <p className='question__title'>lorem ipsum dolor sit amet</p>
-
-          <div
-            onClick={() => setClicked(prev => ({ ...prev, 3: !clicked[3] }))}
-            className='question__button'
-          >
-            {clicked[3] ? '-' : '+'}
-          </div>
-        </div>
-
-        {clicked[3] &&
-          (
-            <p className='faq__question--answer'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Possimus, cumque a alias facilis cum ipsum? Sit, reiciendis iusto! Officia nesciunt reprehenderit
-              laudantium corporis minima sed cum animi.
-            </p>
-          )}
-      </div>
-
-      <hr />
-      <div className="faq__question">
-
-        <div className='question'>
-
-          <p className='question__title'>lorem ipsum dolor sit amet</p>
-
-          <div
-            onClick={() => setClicked(prev => ({ ...prev, 4: !clicked[4] }))}
-            className='question__button'
-          >
-            {clicked[4] ? '-' : '+'}
-          </div>
-        </div>
-
-        {clicked[4] &&
-          (
-            <p className='faq__question--answer'>
+          {clicked[2] &&
+            (<p className='faq__question--answer'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sint eaque?
               Possimus, cumque a alias facilis cum ipsum? Sit, reiciendis iusto! Officia nesciunt reprehenderit
               laudantium corporis minima sed cum animi.
-            </p>
-          )}
-      </div>
+            </p>)
+          }
 
-      <hr />
-      <div className="faq__question">
-
-        <div className='question'>
-
-          <p className='question__title'>lorem ipsum dolor sit amet</p>
-
-          <div
-            onClick={() => setClicked(prev => ({ ...prev, 5: !clicked[5] }))}
-            className='question__button'
-          >
-            {clicked[5] ? '-' : '+'}
-          </div>
         </div>
 
-        {clicked[5] &&
-          (
-            <p className='faq__question--answer'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sint eaque?
-              Possimus, cumque a alias facilis cum ipsum? Sit, reiciendis iusto! Officia nesciunt reprehenderit
-              laudantium corporis minima sed cum animi.
-            </p>
-          )}
-      </div>
+        <hr />
+        <div className="faq__question">
 
-      <hr />
-      <div className="faq__question">
+          <div className='question'>
 
-        <div className='question'>
+            <p className='question__title'>lorem ipsum dolor sit amet</p>
 
-          <p className='question__title'>lorem ipsum dolor sit amet</p>
-
-          <div
-            onClick={() => setClicked(prev => ({ ...prev, 6: !clicked[6] }))}
-            className='question__button'
-          >
-            {clicked[6] ? '-' : '+'}
+            <div
+              onClick={() => setClicked(prev => ({ ...prev, 3: !clicked[3] }))}
+              className='question__button'
+            >
+              {clicked[3] ? '-' : '+'}
+            </div>
           </div>
+
+          {clicked[3] &&
+            (
+              <p className='faq__question--answer'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Possimus, cumque a alias facilis cum ipsum? Sit, reiciendis iusto! Officia nesciunt reprehenderit
+                laudantium corporis minima sed cum animi.
+              </p>
+            )}
         </div>
 
-        {clicked[6] &&
-          (
-            <p className='faq__question--answer'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sint eaque?
-              Possimus, cumque a alias facilis cum ipsum?
-            </p>
-          )}
-      </div>
+        <hr />
+        <div className="faq__question">
 
-      <hr />
+          <div className='question'>
+
+            <p className='question__title'>lorem ipsum dolor sit amet</p>
+
+            <div
+              onClick={() => setClicked(prev => ({ ...prev, 4: !clicked[4] }))}
+              className='question__button'
+            >
+              {clicked[4] ? '-' : '+'}
+            </div>
+          </div>
+
+          {clicked[4] &&
+            (
+              <p className='faq__question--answer'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sint eaque?
+                Possimus, cumque a alias facilis cum ipsum? Sit, reiciendis iusto! Officia nesciunt reprehenderit
+                laudantium corporis minima sed cum animi.
+              </p>
+            )}
+        </div>
+
+        <hr />
+        <div className="faq__question">
+
+          <div className='question'>
+
+            <p className='question__title'>lorem ipsum dolor sit amet</p>
+
+            <div
+              onClick={() => setClicked(prev => ({ ...prev, 5: !clicked[5] }))}
+              className='question__button'
+            >
+              {clicked[5] ? '-' : '+'}
+            </div>
+          </div>
+
+          {clicked[5] &&
+            (
+              <p className='faq__question--answer'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sint eaque?
+                Possimus, cumque a alias facilis cum ipsum? Sit, reiciendis iusto! Officia nesciunt reprehenderit
+                laudantium corporis minima sed cum animi.
+              </p>
+            )}
+        </div>
+
+        <hr />
+        <div className="faq__question">
+
+          <div className='question'>
+
+            <p className='question__title'>lorem ipsum dolor sit amet</p>
+
+            <div
+              onClick={() => setClicked(prev => ({ ...prev, 6: !clicked[6] }))}
+              className='question__button'
+            >
+              {clicked[6] ? '-' : '+'}
+            </div>
+          </div>
+
+          {clicked[6] &&
+            (
+              <p className='faq__question--answer'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sint eaque?
+                Possimus, cumque a alias facilis cum ipsum?
+              </p>
+            )}
+        </div>
+
+        <hr />
+
+        <div className="faq__button">
+          <Button />
+          <Stars />
+        </div>
+      </div>
 
       <div className="faq__photos photos">
 
@@ -186,9 +194,6 @@ export const FAQ = () => {
         </div>
 
       </div>
-
-      <Button />
-      <Stars />
     </section >
   );
 };

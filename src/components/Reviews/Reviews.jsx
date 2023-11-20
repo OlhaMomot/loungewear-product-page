@@ -36,7 +36,7 @@ export const Reviews = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
+        className="mySwiper reviews__swiper"
       >
         <SwiperSlide>
           <div className='reviews__comment comment'>

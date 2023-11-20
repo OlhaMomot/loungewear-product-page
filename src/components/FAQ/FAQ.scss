@@ -3,6 +3,13 @@
 
 .faq {
   padding: 0 40px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+
+  &__container {
+    width: 50%;
+  }
 
   &__title {
     margin: 68px 0 50px;
@@ -11,12 +18,12 @@
   &__question {
     font-size: 18px;
     padding: 18px 0 10px;
-    // max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
 
     &--answer {
       font-size: 14px;
+      width: 100%;
     }
   }
 
@@ -24,7 +31,15 @@
     display: none;
 
     @include onDeskTop {
+      position: relative;
+      top: 100px;
       display: grid;
+    }
+  }
+
+  &__button {
+    @include onDeskTop {
+      display: none;
     }
   }
 }
